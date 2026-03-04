@@ -1,9 +1,10 @@
-distsqlite
+disqlite
 
 [Donate](https://www.paypal.com/ncp/payment/KDNN5CHG4C3RN)
 
+simple distributed sqlite
 
-distributed sqlite example:
+disqlite example:
 
 Run 3 nodes like this:
 
