@@ -28,3 +28,20 @@ python disqlite.py \
   --port 8001 \
   --db data/n1.db \
   --peers http://127.0.0.1:8002,http://127.0.0.1:8003
+
+# write to leader
+curl -X PUT http://127.0.0.1:8001/kv/name \
+  -H "Content-Type: application/json" \
+  -d '{"value":"alice"}'
+
+# read from leader
+curl http://127.0.0.1:8001/kv/name
+
+# read from follower
+curl http://127.0.0.1:8002/kv/name
+
+# list all keys
+curl http://127.0.0.1:8001/kv
+
+# delete from leader
+curl -X DELETE http://127.0.0.1:8001/kv/name
