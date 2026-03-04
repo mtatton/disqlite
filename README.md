@@ -1,5 +1,8 @@
 distsqlite
 
+[Donate](https://www.paypal.com/ncp/payment/KDNN5CHG4C3RN)
+
+
 distributed sqlite example:
 
 Run 3 nodes like this:
